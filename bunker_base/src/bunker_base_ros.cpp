@@ -21,9 +21,9 @@ BunkerBaseRos::BunkerBaseRos(std::string node_name)
   this->declare_parameter("base_frame", "base_link");
   this->declare_parameter("odom_topic_name", "odom");
 
-  this->declare_parameter("is_bunker_mini", "false");
-  this->declare_parameter("simulated_robot", "false");
-  this->declare_parameter("control_rate", "50");
+  this->declare_parameter("is_bunker_mini", false);
+  this->declare_parameter("simulated_robot", false);
+  this->declare_parameter("control_rate", 50);
 
   LoadParameters();
 }
